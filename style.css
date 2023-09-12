@@ -1,20 +1,22 @@
-
-
 body{
     margin: 0px;
     background-image: url("bookshelf.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
 }
 h1{
-    color: rgb(235, 235, 235);
-    background-color: rgb(28, 28, 28);
+    color: rgb(51, 51, 51);
+    background-color: rgb(182, 182, 182);
     text-align: center;
     padding: 15px;
-    margin-top: 0px;
+    margin-top: -5px;
 }
 h2{
-    color: rgb(234, 234, 234);
-    background-color: rgb(41, 41, 41);
+    color: rgb(51, 51, 51);
+    background-color: rgb(186, 186, 186);
     padding: 20px;
     margin: -20px -20px 20px -20px;
     border-radius: 15px 15px 0px 0px;
@@ -27,7 +29,7 @@ label{
 input{
     border-style: none;
     width: 90%;
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(195, 195, 195);
     border-radius: 5px;
     padding: 7px;
     margin: 7px 0px 5px 0px;
@@ -39,7 +41,7 @@ input{
     width: 10%;
 }
 button{
-    background-color: rgb(50,50,50);
+    background-color: rgb(70, 70, 70);
     color: rgb(228, 228, 228);
     border-style: none;
     border-radius: 5px;
@@ -58,34 +60,34 @@ button{
     
 }
 .input{
-    background-color: rgb(181,181,181);
+    background-color: rgb(240, 240, 240);
     padding: 20px;
     margin: 15px 10px;
     width: 280px;
     border-radius: 15px;
     float: left;
-    box-shadow: 0px 10px 50px rgb(0, 0, 0);
+    
 }
 .rak{
-    background-color: rgb(181,181,181);
+    background-color: rgb(240, 240, 240);
     padding: 20px;
     margin: 15px 10px;
     width: 280px;
     border-radius: 15px;
     float: left;
-    box-shadow: 0px 10px 50px rgb(0, 0, 0);
+    
 }
 .edit{
-    background-color: rgb(181,181,181);
+    background-color: rgb(240, 240, 240);
     padding: 20px;
     margin: 15px 10px;
     width: 360px;
     border-radius: 15px;
     float: left;
-    box-shadow: 0px 10px 50px rgb(0, 0, 0);
+    
 }
 pre{
-    background-color: rgb(50,50,50);
+    background-color: rgb(70, 70, 70);
     color: rgb(233, 233, 233);
     padding: 10px;
     width: 90%;
@@ -97,6 +99,10 @@ pre{
         float: none;
         width: 75%;
         margin: 15px auto;
+    }
+    body{
+        backdrop-filter: url(commonfilters.svg#filter);
+    backdrop-filter: blur(10px);
     }
     input{
         width: 95%;
