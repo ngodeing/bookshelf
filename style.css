@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-image: url("bookshelf.jpg");
+    background-image: url("blur.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,18 +8,26 @@ body{
 
 }
 h1{
-    color: rgb(51, 51, 51);
-    background-color: rgb(182, 182, 182);
+    color: rgb(231, 231, 231);
+    background-color: rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 15px;
     margin-top: -5px;
 }
 h2{
-    color: rgb(51, 51, 51);
-    background-color: rgb(186, 186, 186);
+    color: rgb(231, 231, 231);
+    background-color: rgba(0, 0, 0, 0.05);
+    border-bottom-style: solid;
+    border-color: rgb(231, 231, 231);
     padding: 20px;
     margin: -20px -20px 20px -20px;
     border-radius: 15px 15px 0px 0px;
+}
+h3{
+    color: rgb(231, 231, 231);
+}
+label{
+    color: rgb(231, 231, 231);
 }
 label{
     font-weight: bold;
@@ -29,7 +37,7 @@ label{
 input{
     border-style: none;
     width: 90%;
-    background-color: rgb(195, 195, 195);
+    background-color: rgb(231, 231, 231);
     border-radius: 5px;
     padding: 7px;
     margin: 7px 0px 5px 0px;
@@ -41,7 +49,7 @@ input{
     width: 10%;
 }
 button{
-    background-color: rgb(70, 70, 70);
+    background-color: rgba(0, 0, 0, 0.2);
     color: rgb(228, 228, 228);
     border-style: none;
     border-radius: 5px;
@@ -60,7 +68,8 @@ button{
     
 }
 .input{
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgb(231, 231, 231);
     padding: 20px;
     margin: 15px 10px;
     width: 280px;
@@ -69,7 +78,7 @@ button{
     
 }
 .rak{
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 15px 10px;
     width: 280px;
@@ -78,7 +87,7 @@ button{
     
 }
 .edit{
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 15px 10px;
     width: 360px;
@@ -87,7 +96,7 @@ button{
     
 }
 pre{
-    background-color: rgb(70, 70, 70);
+    background-color: rgba(0, 0, 0, 0.2);
     color: rgb(233, 233, 233);
     padding: 10px;
     width: 90%;
@@ -97,12 +106,11 @@ pre{
 @media screen and (max-width: 768px){
     .input,.edit,.rak{
         float: none;
-        width: 75%;
+        width: 70%;
         margin: 15px auto;
     }
-    body{
-        backdrop-filter: url(commonfilters.svg#filter);
-    backdrop-filter: blur(10px);
+    .edit{
+        margin-bottom: 150px;
     }
     input{
         width: 95%;
